@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ServerMonitor));
             this.label1 = new System.Windows.Forms.Label();
             this.requestTimeTB = new System.Windows.Forms.TextBox();
             this.setRefreshRateBtn = new System.Windows.Forms.Button();
@@ -211,6 +212,7 @@
             this.Controls.Add(this.setRefreshRateBtn);
             this.Controls.Add(this.requestTimeTB);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ServerMonitor";
             this.Text = "ServerMonitor";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ServerMonitor_FormClosing);
